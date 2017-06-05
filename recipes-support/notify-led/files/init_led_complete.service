@@ -1,0 +1,7 @@
+[Unit]
+Description=Start LEDs when initialising
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/init_complete.sh
